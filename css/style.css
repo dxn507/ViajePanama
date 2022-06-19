@@ -1,0 +1,257 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-align: center;
+    list-style: none;
+    font-family: sans-serif;
+
+}
+body{
+    max-width: 1200px;
+    height: auto;
+    margin: auto;
+    background-color: cornsilk;
+}
+header{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.5)), url("../img/edificio_trump.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+nav{
+    width: 100%;
+    height: 100px;
+    background: rgba(255,255,255,0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav .logo{
+    width: 100px;
+    min-width: 90px;
+    border-radius: 50%;
+    
+    margin:5px;
+    padding: 5px;
+}
+nav .logo img{
+    width: 100%;
+    border-radius: 50%;border: solid 5px green;
+    background-color: #fff;
+}
+nav ul{
+    display: flex;
+}
+nav ul li{
+    padding-right: 30px;
+
+}
+nav ul li a{
+    display: inline-block;
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+}
+nav ul li a:hover{
+    color: #35e435;
+    transform: scale(1.2);
+}
+header .text-hero{
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+header .text-hero h1{
+    font-size: 70px;
+}
+header .text-hero p{
+    padding: 24px;
+    font-size: 25px;
+}
+header .text-hero button{
+    width: 200px;
+    height: 60px;
+    margin: 10px;
+    padding: 20px 35px;
+    cursor: pointer;
+    background-color: #3389da;
+    border: solid 2px rgb(7, 2, 248);
+    border-radius: 10px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+}
+header .text-hero button:hover{
+    background-color: rgb(7, 2, 248);
+    border: solid 2px #d3dae0;
+}
+.cards-contenedor{
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    padding: 30px;
+    text-align: center;
+
+}
+.cards-contenedor .cards{
+    padding-top: 10px;
+    margin: auto;
+    width: 90%;
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+.cards-contenedor .cards .card{
+    width: 28%;
+    
+    background: rgba(174, 241, 174, 0.2);
+    border-radius: 5%;
+    box-shadow: 8px 12px 15px rgba(0,0,0,0.6);
+}
+.cards-contenedor .cards .card:hover{
+    transform: scale(1.05);
+
+}
+.cards-contenedor .cards .card img{
+    width: 100%;
+    border-radius: 5% 5% 0 0;
+}
+.text-card{
+    padding: 10px;
+}
+.text-card h3{
+    padding: 10px;
+
+}
+.text-card p{
+    padding: 5px;
+    text-align: justify;
+}
+.us{
+    padding-bottom: 10px;
+}
+#us{
+    width: 90%;
+    padding: 20px 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#us p{
+    font-size: 25px;
+}
+.form-contenedor{
+    width: 90%;
+    padding: 10px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+form{
+    margin: auto;
+    width: 50%;
+    max-width:600px;
+    background: #8e8cc6;
+    padding: 20px;
+}
+form h2{
+    text-align: center;
+}
+label{
+    display: inline-block;
+    padding-bottom: 10px;
+}
+p{
+    margin-top: 20px;      
+}
+input,textarea{
+    max-width: 100%;
+    min-width: 100%;
+    font-size: 24px;
+}
+.btn{font-size: 16px;
+    background: #2300b7;
+    color: #fff;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 6px;
+    border: none;
+    transition: all 0.3s;
+}
+.btn:hover{
+    color: #000;
+    background: lightblue;
+}
+.ilustracion-form{
+    width: 50%;
+    max-width:600px;
+    padding: 20px 20px 20px 0;
+    
+}
+.ilustracion-form img{
+    margin-top: 20px;
+    width: 100%;
+}
+.footer{
+    width: 100%;
+    height: 140px;
+    margin-top: 20px;
+    background: #070930;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.zona, 
+.autor,
+.redes{
+    width: 28%;
+    padding: 5px;
+    text-align: center;
+}
+.redes img{
+    max-width: 20px;
+    margin-left:10px;
+}
+
+@media (max-width:768px){
+    nav ul li a{
+        font-size: 18px;
+    }
+    .cards-contenedor .cards .card{
+        margin: 20px auto;
+        width: 80%;}
+    .cards-contenedor .cards{
+        flex-direction: column;
+        justify-content: space-around;
+        height: auto;
+    }
+    .form-contenedor{
+        width: 100%;
+        flex-direction: column;
+    }
+    .ilustracion-form{
+        width: 100%;
+    }
+    #contacto{
+        width: 100%;
+    }
+    .footer{
+        height: auto;
+        flex-direction: column;
+    }
+    .zona, 
+    .autor,
+    .redes{
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    }
+}
